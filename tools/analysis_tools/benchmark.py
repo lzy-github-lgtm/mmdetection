@@ -27,7 +27,7 @@ def parse_args():
         default=1,
         help='number of repeat times of measurement for averaging the results')
     parser.add_argument(
-        '--max-iter', type=int, default=2000, help='num of max iter')
+        '--max-iter', type=int, default=100, help='num of max iter')
     parser.add_argument(
         '--log-interval', type=int, default=50, help='interval of logging')
     parser.add_argument(
