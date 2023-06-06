@@ -87,12 +87,14 @@ def coco_classes() -> list:
     #     'scissors', 'teddy_bear', 'hair_drier', 'toothbrush'
     # ]
 
-    return  ['BoltNut', 'BoltHead', 'LockingWire', 'Coupling', 'Putty', 'BrakePad', 
-             'TailCotterPin', 'BrakeClamp', 'Axle', 'RadiatingRib', 'SingleLockingWire',
-               'Mirror', 'OilLevelMirror', 'OilPlugB', 'CotterPin', 'MagneticBoltHolder', 
-               'OilPlugS', 'Nameplate', 'Sander', 'Nozzle', 'WholeCotterPin', 'Rubber', 
-               'WheelTread', 'BrakeCylinder', 'Boot', 'TractionRod', 'LockSpring',
-                 'deformation', 'abnormal_Tape', 'RadiatingRid', 'crack_LockingWire']
+    # return  ['BoltNut', 'BoltHead', 'LockingWire', 'Coupling', 'Putty', 'BrakePad', 
+    #          'TailCotterPin', 'BrakeClamp', 'Axle', 'RadiatingRib', 'SingleLockingWire',
+    #            'Mirror', 'OilLevelMirror', 'OilPlugB', 'CotterPin', 'MagneticBoltHolder', 
+    #            'OilPlugS', 'Nameplate', 'Sander', 'Nozzle', 'WholeCotterPin', 'Rubber', 
+    #            'WheelTread', 'BrakeCylinder', 'Boot', 'TractionRod', 'LockSpring',
+    #              'deformation', 'abnormal_Tape', 'RadiatingRid', 'crack_LockingWire']
+
+    return ['BoltHead_1','BoltHead_2','lost_BoltHead']
 
 
 def coco_panoptic_classes() -> list:

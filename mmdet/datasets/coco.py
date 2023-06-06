@@ -29,12 +29,16 @@ class CocoDataset(BaseDetDataset):
         #  'laptop', 'mouse', 'remote', 'keyboard', 'cell phone', 'microwave',
         #  'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase',
         #  'scissors', 'teddy bear', 'hair drier', 'toothbrush'),
-        ('BoltNut', 'BoltHead', 'LockingWire', 'Coupling', 'Putty', 'BrakePad', 
-             'TailCotterPin', 'BrakeClamp', 'Axle', 'RadiatingRib', 'SingleLockingWire',
-               'Mirror', 'OilLevelMirror', 'OilPlugB', 'CotterPin', 'MagneticBoltHolder', 
-               'OilPlugS', 'Nameplate', 'Sander', 'Nozzle', 'WholeCotterPin', 'Rubber', 
-               'WheelTread', 'BrakeCylinder', 'Boot', 'TractionRod', 'LockSpring',
-                 'deformation', 'abnormal_Tape', 'RadiatingRid', 'crack_LockingWire'),
+
+
+        # ('BoltNut', 'BoltHead', 'LockingWire', 'Coupling', 'Putty', 'BrakePad', 
+        #      'TailCotterPin', 'BrakeClamp', 'Axle', 'RadiatingRib', 'SingleLockingWire',
+        #        'Mirror', 'OilLevelMirror', 'OilPlugB', 'CotterPin', 'MagneticBoltHolder', 
+        #        'OilPlugS', 'Nameplate', 'Sander', 'Nozzle', 'WholeCotterPin', 'Rubber', 
+        #        'WheelTread', 'BrakeCylinder', 'Boot', 'TractionRod', 'LockSpring',
+        #          'deformation', 'abnormal_Tape', 'RadiatingRid', 'crack_LockingWire'),
+
+        ('BoltHead_1','BoltHead_2','lost_BoltHead'),
         # palette is a list of color tuples, which is used for visualization.
         'palette':
         [(220, 20, 60), (119, 11, 32), (0, 0, 142), (0, 0, 230), (106, 0, 228),

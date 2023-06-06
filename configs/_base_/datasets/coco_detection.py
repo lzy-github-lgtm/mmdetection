@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'CocoDataset'
-data_root = 'datasets/380/coco2017/'
+data_root = 'datasets/BotHead/coco2017/'
 
 # Example to use different file client
 # Method 1: simply set the data root and let the file I/O module
