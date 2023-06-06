@@ -4,7 +4,7 @@ import os
 import shutil
 
 root_path = os.getcwd()
-root_path = os.path.join(root_path,'datasets/380')
+root_path = os.path.join(root_path,'datasets/BoltHead')
 
 def voc2coco():
     import datetime
@@ -12,15 +12,15 @@ def voc2coco():
 
     # 处理coco数据集中category字段。
     # 创建一个 {类名 : id} 的字典，并保存到 总标签data 字典中。
-    # class_name_to_id = {'point': 1, }
-    class_name_to_id = {'BoltNut':0, 'BoltHead':1, 'LockingWire':2, 'Coupling':3, 
-                        'Putty':4, 'BrakePad':5, 'TailCotterPin':6, 'BrakeClamp':7, 'Axle':8,
-                          'RadiatingRib':9, 'SingleLockingWire':10, 'Mirror':11, 'OilLevelMirror':12, 
-                          'OilPlugB':13, 'CotterPin':14, 'MagneticBoltHolder':15, 'OilPlugS':16,
-                            'Nameplate':17, 'Sander':18, 'Nozzle':19, 'WholeCotterPin':20, 'Rubber':21, 
-                            'WheelTread':22, 'BrakeCylinder':23, 'Boot':24, 'TractionRod':25, 
-                            'LockSpring':26, 'deformation':27, 'abnormal_Tape':28,
-                              'RadiatingRid':29, 'crack_LockingWire':30}
+    class_name_to_id = {'BoltHead_1': 0,'BoltHead_2':1 ,'lost_BoltHead':3}
+    # class_name_to_id = {'BoltNut':0, 'BoltHead':1, 'LockingWire':2, 'Coupling':3, 
+    #                     'Putty':4, 'BrakePad':5, 'TailCotterPin':6, 'BrakeClamp':7, 'Axle':8,
+    #                       'RadiatingRib':9, 'SingleLockingWire':10, 'Mirror':11, 'OilLevelMirror':12, 
+    #                       'OilPlugB':13, 'CotterPin':14, 'MagneticBoltHolder':15, 'OilPlugS':16,
+    #                         'Nameplate':17, 'Sander':18, 'Nozzle':19, 'WholeCotterPin':20, 'Rubber':21, 
+    #                         'WheelTread':22, 'BrakeCylinder':23, 'Boot':24, 'TractionRod':25, 
+    #                         'LockSpring':26, 'deformation':27, 'abnormal_Tape':28,
+    #                           'RadiatingRid':29, 'crack_LockingWire':30}
 
     # 创建coco的文件夹
     if not os.path.exists(os.path.join(root_path, "coco2017")):
